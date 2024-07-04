@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dre06jxnea4q6"]
+
+[ext_resource type="PackedScene" uid="uid://bq3xmkqvje7gx" path="res://appicon.tscn" id="1_a2nhi"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 6
+
+[node name="Test" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Taskbar" type="PanelContainer" parent="Main"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Main/Taskbar"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Main/Taskbar/HBoxContainer"]
+layout_mode = 2
+text = "What"
