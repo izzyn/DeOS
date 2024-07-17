@@ -12,7 +12,7 @@ grow_vertical = 2
 
 [node name="Main" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -21,9 +21,30 @@ grow_vertical = 2
 [node name="GridContainer" type="GridContainer" parent="Main"]
 layout_mode = 2
 size_flags_vertical = 3
-columns = 6
+columns = 8
 
 [node name="Test" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test2" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test3" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test4" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test5" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test6" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test7" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
+layout_mode = 2
+
+[node name="Test8" parent="Main/GridContainer" instance=ExtResource("1_a2nhi")]
 layout_mode = 2
 
 [node name="Taskbar" type="PanelContainer" parent="Main"]
